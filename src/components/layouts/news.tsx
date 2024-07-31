@@ -1,7 +1,7 @@
 import React from 'react'
 import News1 from '../../assets/images/news1.jpg'
-import News2 from '../../assets/images/news2.jpg'
-import News3 from '../../assets/images/news3.jpg'
+// import News2 from '../../assets/images/news2.jpg'
+// import News3 from '../../assets/images/news3.jpg'
 const News = () => {
   return (
     <section id="blog">
