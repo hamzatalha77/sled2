@@ -4,6 +4,7 @@ import Collab from './components/layouts/collab'
 import About from './components/layouts/about'
 import News from './components/layouts/news'
 import Services from './components/layouts/services'
+import Products from './components/layouts/products'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Collab />
       <About />
       <News />
+      <Products />
       <Services />
     </div>
   )
