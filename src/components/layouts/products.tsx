@@ -1,4 +1,3 @@
-import React from 'react'
 import News1 from '../../assets/images/news1.jpg'
 const Products = () => {
   return (
