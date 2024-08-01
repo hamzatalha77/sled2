@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -20,18 +20,48 @@ const Hero = () => {
       loop: true,
       pagination: {
         el: '.swiper-progressbar',
-        type: 'progressbar',
-        clickable: true
+        type: 'progressbar'
+        // clickable: true
       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
+      },
+      on: {
+        init: function () {
+          const activeSlide = this.realIndex
+          const totalSlide = this.slides.length
+          const activeSlideElement =
+            document.getElementsByClassName('active-slide')[0]
+          const totalSlideElement =
+            document.getElementsByClassName('total-slide')[0]
+          if (activeSlideElement) {
+            activeSlideElement.innerHTML = activeSlide + 1
+          }
+          if (totalSlideElement) {
+            totalSlideElement.innerHTML = totalSlide
+          }
+        },
+        slideChange: function () {
+          const activeSlide = this.realIndex
+          const totalSlide = this.slides.length
+          const activeSlideElement =
+            document.getElementsByClassName('active-slide')[0]
+          const totalSlideElement =
+            document.getElementsByClassName('total-slide')[0]
+          if (activeSlideElement) {
+            activeSlideElement.innerHTML = activeSlide + 1
+          }
+          if (totalSlideElement) {
+            totalSlideElement.innerHTML = totalSlide
+          }
+        }
       }
     })
   }, [])
 
   return (
-    <section className="h-screen overflow-hidden relative text-white">
+    <section className="hero h-screen overflow-hidden relative text-white">
       <div className="swiper">
         <div className="swiper-wrapper">
           <div className="swiper-slide">
@@ -55,10 +85,10 @@ const Hero = () => {
               style={{ backgroundImage: `url(${bgImage3})` }}
             >
               <div className="slider-heading">
-                <h2>
+                <h2 className="hero-title">
                   <span>Discover the best</span>
                 </h2>
-                <h2>
+                <h2 className="hero-title">
                   <span>we are the lights</span>
                 </h2>
               </div>
@@ -70,10 +100,10 @@ const Hero = () => {
               style={{ backgroundImage: `url(${bgImage2})` }}
             >
               <div className="slider-heading">
-                <h2>
+                <h2 className="hero-title">
                   <span>Discover the best</span>
                 </h2>
-                <h2>
+                <h2 className="hero-title">
                   <span>we are the lights</span>
                 </h2>
               </div>
@@ -90,32 +120,32 @@ const Hero = () => {
         <ul>
           <li>
             <a href="#">
-              <img src={icon1} alt="" />
+              <img src={icon1} alt="facebook" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={icon2} alt="" />
+              <img src={icon2} alt="instagram" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={icon3} alt="" />
+              <img src={icon3} alt="telegram" />
             </a>
           </li>
         </ul>
         <div className="h-line-before"></div>
-        <div className="h-line-after"> </div>
+        <div className="h-line-after"></div>
       </div>
       <div className="copyright-text">
         Copyright &#169; 2024 all rights reserved.
       </div>
       <div className="swiper-progressbar-wrap">
-        <div className="active-slider"></div>
+        <div className="active-slide"></div>
         <div className="swiper-progressbar"></div>
-        <div className="total-slider"></div>
+        <div className="total-slide"></div>
       </div>
-      <div className="swiper-pagination"></div>
+
       <div className="swiper-button-prev"></div>
       <div className="swiper-button-next"></div>
     </section>
