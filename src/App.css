@@ -29,7 +29,7 @@ nav .logo {
   align-items: center;
 }
 nav .logo img {
-  height: 25px;
+  height: 50px;
   width: auto;
   margin-right: 10px;
 }
@@ -782,12 +782,12 @@ article p {
 .social-icons-wrap .h-line-before,
 .social-icons-wrap .h-line-after {
   position: absolute;
-  left: 0;
-  right: 0;
   bottom: 100%;
-  margin: auto;
   width: 1px;
   height: 70px;
+  margin: auto;
+  left: 0;
+  right: 0;
   overflow: hidden;
   background-color: #fff;
 }
@@ -831,7 +831,7 @@ article p {
 
 .social-icons-wrap li a span {
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: -90px;
   font-weight: 700;
   letter-spacing: 0.5px;

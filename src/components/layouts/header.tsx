@@ -13,7 +13,7 @@ const Header = () => {
       <nav>
         <div className="logo">
           <img src={Logo} alt="logo" />
-          <h1>LOGO</h1>
+          {/* <h1>LOGO</h1> */}
         </div>
         <ul>
           <li>

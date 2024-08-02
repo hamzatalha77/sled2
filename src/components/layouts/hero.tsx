@@ -119,18 +119,21 @@ const Hero = () => {
       <div className="social-icons-wrap">
         <ul>
           <li>
-            <a href="#">
-              <img src={icon1} alt="facebook" />
+            <a href="">
+              <img src={icon1} alt="" />
+              <span>facebook</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src={icon2} alt="instagram" />
+            <a href="">
+              <img src={icon2} alt="" />
+              <span>facebook</span>
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src={icon3} alt="telegram" />
+            <a href="">
+              <span>facebook</span>
+              <img src={icon3} alt="" />
             </a>
           </li>
         </ul>
