@@ -20,8 +20,8 @@ const Hero = () => {
       loop: true,
       pagination: {
         el: '.swiper-progressbar',
-        type: 'progressbar'
-        // clickable: true
+        type: 'progressbar',
+        clickable: true
       },
       navigation: {
         nextEl: '.swiper-button-next',
