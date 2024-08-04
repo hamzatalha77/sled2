@@ -7,9 +7,9 @@ import 'swiper/css/pagination'
 import bgImage1 from '../../assets/img/bg1.jpg'
 import bgImage2 from '../../assets/img/bg2.jpg'
 import bgImage3 from '../../assets/img/bg3.jpg'
-import icon1 from '../../assets/icons/logofb.svg'
-import icon2 from '../../assets/icons/icons8-insta.svg'
-import icon3 from '../../assets/icons/icons8-telegram.svg'
+import icon1 from '../../assets/icons/icons8-facebook.svg'
+import icon2 from '../../assets/icons/icons8-instagram.svg'
+import icon3 from '../../assets/icons/icons8-twitterx.svg'
 
 const Hero = () => {
   useEffect(() => {
@@ -127,12 +127,12 @@ const Hero = () => {
           <li>
             <a href="">
               <img src={icon2} alt="" />
-              <span>facebook</span>
+              <span>Instagram</span>
             </a>
           </li>
           <li>
             <a href="">
-              <span>facebook</span>
+              <span>Twitter</span>
               <img src={icon3} alt="" />
             </a>
           </li>
