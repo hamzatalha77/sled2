@@ -3,7 +3,7 @@ const Products = () => {
   return (
     <section className="design" id="design">
       <div className="containerdesign">
-        <div className="title">
+        <div className="design-title">
           <h2>Recent Arts & Designs</h2>
           <p>recent arts & designs on the blog</p>
         </div>

@@ -28,12 +28,6 @@ const Header = () => {
           <li>
             <a href="#">Contact Us</a>
           </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
         </ul>
         <div
           className={`hamburger ${hamburgerActive ? 'hamburger-active' : ''}`}
