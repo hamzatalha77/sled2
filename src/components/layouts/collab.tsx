@@ -13,28 +13,33 @@ import Image6 from '../../assets/images/6.png'
 import Image66 from '../../assets/images/6-6.png'
 const collab = () => {
   return (
-    <div className="our-clients">
-      <ul>
-        <li>
-          <img src={Image1} alt="" /> <img src={Image11} alt="" />
-        </li>
-        <li>
-          <img src={Image2} alt="" /> <img src={Image22} alt="" />
-        </li>
-        <li>
-          <img src={Image3} alt="" /> <img src={Image33} alt="" />
-        </li>
-        <li>
-          <img src={Image4} alt="" /> <img src={Image44} alt="" />
-        </li>
-        <li>
-          <img src={Image5} alt="" /> <img src={Image55} alt="" />
-        </li>
-        <li>
-          <img src={Image6} alt="" /> <img src={Image66} alt="" />
-        </li>
-      </ul>
-    </div>
+    <section className=" h-screen flex justify-center items-center">
+      <div className="our-clients">
+        <a href="#" className="underline">
+          <span className="textss">Flashy Head Line</span>
+        </a>
+        <ul>
+          <li>
+            <img src={Image1} alt="" /> <img src={Image11} alt="" />
+          </li>
+          <li>
+            <img src={Image2} alt="" /> <img src={Image22} alt="" />
+          </li>
+          <li>
+            <img src={Image3} alt="" /> <img src={Image33} alt="" />
+          </li>
+          <li>
+            <img src={Image4} alt="" /> <img src={Image44} alt="" />
+          </li>
+          <li>
+            <img src={Image5} alt="" /> <img src={Image55} alt="" />
+          </li>
+          <li>
+            <img src={Image6} alt="" /> <img src={Image66} alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
   )
 }
 

@@ -115,6 +115,21 @@ nav ul li a:hover {
   left: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.heading-text h2 {
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+}
+.heading-text h2:after {
+  content: '';
+  height: 2px;
+  width: 50%;
+  background-color: #2c64fc;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
 
 .menubar ul {
   padding: 0;
@@ -135,14 +150,6 @@ nav ul li a:hover {
 
 .menubar ul li a:hover {
   background-color: #f5f5f5;
-}
-@media screen and (max-width: 790px) {
-  .hamburger {
-    display: block;
-  }
-  nav ul {
-    display: none;
-  }
 }
 
 @keyframes slide {
@@ -309,43 +316,7 @@ nav ul li a:hover {
   padding: 15px 40px;
   letter-spacing: 1px;
 }
-@media (max-width: 991px) {
-  .row {
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-  }
-  .row .contentWrapper {
-    padding-left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .row {
-    width: 90%;
-  }
-  .row .contentWrapper h2 {
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .row .contentWrapper p {
-    line-height: 24px;
-  }
-}
-@media (max-width: 575px) {
-  .row .contentWrapper span .textWrapper {
-    font-size: 18px;
-  }
-  .row .contentWrapper h2 {
-    font-size: 25px;
-  }
-  .row .contentWrapper p {
-    font-size: 15px;
-    line-height: 22px;
-  }
-  .row .contentWrapper a {
-    font-size: 15px;
-    padding: 10px 40px;
-  }
-}
+
 #blog {
   display: flex;
   justify-content: center;
@@ -436,26 +407,7 @@ nav ul li a:hover {
   color: #f33c3c;
   transition: all ease 0.3s;
 }
-@media (max-width: 1250px) {
-  .blog-box {
-    width: 300px;
-  }
-}
 
-@media (max-width: 1100px) {
-  .blog-box {
-    width: 70%;
-  }
-}
-@media (max-width: 550px) {
-  .blog-box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 20px;
-  }
-}
 #services {
   width: 100%;
 }
@@ -610,21 +562,7 @@ article p {
   text-transform: capitalize;
   font-family: var(--Playfair);
 }
-@media screen and (min-width: 1200px) {
-  .design-content {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 768px) {
-  .design-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .design-item {
-    margin: 0;
-  }
-}
+
 .hero {
   --swiper-theme-color: #fff;
 }
@@ -909,4 +847,129 @@ article p {
   min-width: 50px;
   height: 50px;
   font-size: 25px;
+}
+@media (max-width: 568px) {
+}
+@media (max-width: 1250px) {
+  .blog-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .swiper-progressbar-wrap {
+    bottom: 30px;
+    left: 0px;
+    max-width: 300px;
+    width: 50%;
+  }
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
+  #blog {
+    padding: 20px;
+  }
+  .row .contentWrapper span .textWrapper {
+    font-size: 18px;
+  }
+  .row .contentWrapper h2 {
+    font-size: 25px;
+  }
+  .row .contentWrapper p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .row .contentWrapper a {
+    font-size: 15px;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .design-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .design-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .design-item {
+    margin: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .row {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .row .contentWrapper {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    width: 90%;
+  }
+  .row .contentWrapper h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .row .contentWrapper p {
+    line-height: 24px;
+  }
+  .swiper-progressbar-wrap {
+    bottom: 30px;
+    left: 0px;
+    max-width: 300px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+}
+.underline {
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+.underline::after {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: 50%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 80%;
+  background: black;
+}
+
+.textss {
+  background: white;
+  color: black;
+  font-size: 36px;
+  font-family: Impact, sans;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0 12px;
 }
