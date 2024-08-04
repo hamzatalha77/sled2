@@ -1,4 +1,3 @@
-import React from 'react'
 import Tesla from '../../assets/images/tesla.jpg'
 const About = () => {
   return (
@@ -10,7 +9,7 @@ const About = () => {
         <div className="contentWrapper">
           <div className="content">
             <span className="textWrapper">
-              <span> </span>New Collection
+              <span> </span>About Us
             </span>
             <h2>something to tell</h2>
             <p>
@@ -19,7 +18,7 @@ const About = () => {
               veniam quibusdam voluptatem nemo sunt ea consequatur ex voluptates
               dicta incidunt molestiae!
             </p>
-            <a>another thing over there</a>
+            <a>another thing over here</a>
           </div>
         </div>
       </div>

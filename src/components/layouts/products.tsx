@@ -15,7 +15,7 @@ const Products = () => {
               <span>
                 <i className="far fa-heart"></i> 22
               </span>
-              <span>Art & Design</span>
+              <span>StrongLed</span>
             </div>
             <div className="design-title">
               <a href="#">
@@ -30,7 +30,7 @@ const Products = () => {
               <span>
                 <i className="far fa-heart"></i> 22
               </span>
-              <span>Art & Design</span>
+              <span>StrongLed</span>
             </div>
             <div className="design-title">
               <a href="#">
@@ -45,7 +45,7 @@ const Products = () => {
               <span>
                 <i className="far fa-heart"></i> 22
               </span>
-              <span>Art & Design</span>
+              <span>StrongLed</span>
             </div>
             <div className="design-title">
               <a href="#">
@@ -60,7 +60,7 @@ const Products = () => {
               <span>
                 <i className="far fa-heart"></i> 22
               </span>
-              <span>Art & Design</span>
+              <span>StrongLed</span>
             </div>
             <div className="design-title">
               <a href="#">
@@ -75,7 +75,7 @@ const Products = () => {
               <span>
                 <i className="far fa-heart"></i> 22
               </span>
-              <span>Art & Design</span>
+              <span>StrongLed</span>
             </div>
             <div className="design-title">
               <a href="#">
@@ -90,7 +90,7 @@ const Products = () => {
               <span>
                 <i className="far fa-heart"></i> 22
               </span>
-              <span>Art & Design</span>
+              <span>StrongLed</span>
             </div>
             <div className="design-title">
               <a href="#">

@@ -61,7 +61,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="hero h-screen overflow-hidden relative text-white">
+    <section className="hero h-[91.5vh] overflow-hidden relative text-white">
       <div className="swiper">
         <div className="swiper-wrapper">
           <div className="swiper-slide">

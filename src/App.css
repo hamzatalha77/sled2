@@ -568,6 +568,7 @@ article p {
 }
 .slider-content {
   background-size: cover;
+  width: 100%;
   height: 100vh;
   position: relative;
   z-index: 11;
@@ -848,8 +849,7 @@ article p {
   height: 50px;
   font-size: 25px;
 }
-@media (max-width: 568px) {
-}
+
 @media (max-width: 1250px) {
   .blog-box {
     width: 300px;
@@ -862,10 +862,13 @@ article p {
   }
 }
 @media (max-width: 550px) {
+  .hero-title span {
+    font-size: 25px;
+  }
   .swiper-progressbar-wrap {
     bottom: 30px;
     left: 0px;
-    max-width: 300px;
+
     width: 50%;
   }
   .blog-box {
@@ -891,28 +894,9 @@ article p {
   }
 }
 
-@media screen and (max-width: 790px) {
-  .hamburger {
-    display: block;
-  }
-  nav ul {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .design-content {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (min-width: 768px) {
-  .design-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .design-item {
-    margin: 0;
   }
 }
 
@@ -926,6 +910,15 @@ article p {
   }
 }
 @media (max-width: 768px) {
+  .hero-title span {
+    font-size: 25px;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
   .row {
     width: 90%;
   }
@@ -941,6 +934,14 @@ article p {
     left: 0px;
     max-width: 300px;
     width: 100%;
+  }
+  .design-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .design-item {
+    margin: 0;
   }
 }
 @media (max-width: 575px) {
