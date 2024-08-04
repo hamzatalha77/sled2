@@ -28,7 +28,7 @@ const Hero = () => {
         prevEl: '.swiper-button-prev'
       },
       on: {
-        init: function () {
+        init: function (this: Swiper) {
           const activeSlide = this.realIndex
           const totalSlide = this.slides.length
           const activeSlideElement =
@@ -36,13 +36,13 @@ const Hero = () => {
           const totalSlideElement =
             document.getElementsByClassName('total-slide')[0]
           if (activeSlideElement) {
-            activeSlideElement.innerHTML = activeSlide + 1
+            activeSlideElement.innerHTML = (activeSlide + 1).toString()
           }
           if (totalSlideElement) {
-            totalSlideElement.innerHTML = totalSlide
+            totalSlideElement.innerHTML = totalSlide.toString()
           }
         },
-        slideChange: function () {
+        slideChange: function (this: Swiper) {
           const activeSlide = this.realIndex
           const totalSlide = this.slides.length
           const activeSlideElement =
@@ -50,10 +50,10 @@ const Hero = () => {
           const totalSlideElement =
             document.getElementsByClassName('total-slide')[0]
           if (activeSlideElement) {
-            activeSlideElement.innerHTML = activeSlide + 1
+            activeSlideElement.innerHTML = (activeSlide + 1).toString()
           }
           if (totalSlideElement) {
-            totalSlideElement.innerHTML = totalSlide
+            totalSlideElement.innerHTML = totalSlide.toString()
           }
         }
       }
