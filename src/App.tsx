@@ -5,6 +5,7 @@ import News from './components/layouts/news'
 import Services from './components/layouts/services'
 import Products from './components/layouts/products'
 import Hero from './components/layouts/hero'
+import Footer from './components/layouts/footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Collab />
       <News />
       <Services />
+      <Footer />
     </div>
   )
 }

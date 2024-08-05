@@ -140,9 +140,9 @@ const Hero = () => {
         <div className="h-line-before"></div>
         <div className="h-line-after"></div>
       </div>
-      <div className="copyright-text">
+      {/* <div className="copyright-text">
         Copyright &#169; 2024 all rights reserved.
-      </div>
+      </div> */}
       <div className="swiper-progressbar-wrap">
         <div className="active-slide"></div>
         <div className="swiper-progressbar"></div>
