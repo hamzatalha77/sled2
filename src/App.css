@@ -977,6 +977,7 @@ article p {
 }
 
 footer {
+  bottom: 0%;
   position: relative;
   width: 100%;
   height: auto;
@@ -1066,4 +1067,55 @@ footer p {
 .footercontact {
   width: calc(35% - 60px);
   margin-right: 0 !important;
+}
+.footercontact .footerinfo {
+  position: relative;
+}
+.footercontact .footerinfo li {
+  display: flex;
+  margin-bottom: 16px;
+}
+.footercontact .footerinfo li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.footercontact .footerinfo li span {
+  color: #999;
+}
+
+.footercontact .footerinfo li a {
+  color: #999;
+  text-decoration: none;
+}
+.footercontact .footerinfo li a:hover {
+  color: #fff;
+}
+.copyrightText {
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+}
+@media (max-width: 991px) {
+  footer {
+    padding: 40px;
+  }
+  footer .footercontainer {
+    flex-direction: column;
+  }
+
+  footer .footercontainer .sec {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  footer .footercontainer .sec.aboutus,
+  .quickLinks,
+  .footercontact {
+    width: 100%;
+  }
+  .copyrightText {
+    padding: 8px 40px;
+  }
 }

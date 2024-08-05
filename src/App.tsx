@@ -1,24 +1,21 @@
 import Header from './components/layouts/header'
-import Collab from './components/layouts/collab'
-import About from './components/layouts/about'
-import News from './components/layouts/news'
-import Services from './components/layouts/services'
-import Products from './components/layouts/products'
-import Hero from './components/layouts/hero'
 import Footer from './components/layouts/footer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Main from './components/pages/main'
+import About from './components/pages/about'
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <Hero />
-      <About />
-      <Products />
-      <Collab />
-      <News />
-      <Services />
+      <main>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/aboutus" element={<About />} />
+        </Routes>
+      </main>
       <Footer />
-    </div>
+    </Router>
   )
 }
 

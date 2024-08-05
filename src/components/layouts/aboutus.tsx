@@ -1,5 +1,5 @@
 import Tesla from '../../assets/images/tesla.jpg'
-const About = () => {
+const Aboutus = () => {
   return (
     <section className="grid place-items-center min-h-screen w-full">
       <div className="row">
@@ -26,4 +26,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Aboutus

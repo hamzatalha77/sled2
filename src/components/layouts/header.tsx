@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Logo from '../../assets/StrongLogo.png'
+import { Link } from 'react-router-dom'
 const Header = () => {
   const [navActive, setNavActive] = useState(false)
   const [hamburgerActive, setHamburgerActive] = useState(false)
@@ -13,20 +14,19 @@ const Header = () => {
       <nav>
         <div className="logo">
           <img src={Logo} alt="logo" />
-          {/* <h1>LOGO</h1> */}
         </div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to={'/'}>Home</Link>
           </li>
           <li>
-            <a href="#">Services</a>
+            <Link to={'/aboutus'}>About Us</Link>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <Link to={'/'}>Blog</Link>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <Link to={'/'}>Contact Us</Link>
           </li>
         </ul>
         <div
@@ -41,22 +41,16 @@ const Header = () => {
       <div className={`menubar ${navActive ? 'active' : ''}`}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to={'/'}>Home</Link>
           </li>
           <li>
-            <a href="#">Services</a>
+            <Link to={'/'}>About Us</Link>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <Link to={'/'}>Blog</Link>
           </li>
           <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">Contact Us</a>
+            <Link to={'/'}>Contact Us</Link>
           </li>
         </ul>
       </div>

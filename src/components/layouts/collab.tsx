@@ -10,7 +10,7 @@ import Image5 from '../../assets/images/5.png'
 import Image55 from '../../assets/images/5-5.png'
 import Image6 from '../../assets/images/6.png'
 import Image66 from '../../assets/images/6-6.png'
-const collab = () => {
+const Collab = () => {
   return (
     <section className=" h-screen flex justify-center items-center">
       <div className="our-clients">
@@ -42,4 +42,4 @@ const collab = () => {
   )
 }
 
-export default collab
+export default Collab
