@@ -14,9 +14,10 @@ const Collab = () => {
   return (
     <section className=" h-screen flex justify-center items-center">
       <div className="our-clients">
-        <a href="#" className="underline">
-          <span className="textss">Flashy Head Line</span>
-        </a>
+        <div className="big-headers">
+          <span className="big-header">Our Collab</span>
+        </div>
+
         <ul>
           <li>
             <img src={Image1} alt="" /> <img src={Image11} alt="" />

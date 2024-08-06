@@ -2,14 +2,17 @@ import 'remixicon/fonts/remixicon.css'
 const Services = () => {
   return (
     <section className="h-screen relative pb-11" id="services">
-      <h2 className="heading"> Services </h2>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+      <div className="big-headers">
+        <span className="big-header">Our Services</span>
+      </div>
+      {/* <h2 className="heading"> Services </h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing. </p> */}
 
       <div className="services-container">
         <div className="service-item">
           <ul>
             <li>
-              <i className="fa-solid fa-desktop"></i>
+              <i className="ri-home-4-line"></i>
             </li>
           </ul>
           <article>
@@ -24,7 +27,7 @@ const Services = () => {
         <div className="service-item">
           <ul>
             <li>
-              <i className="fa-solid fa-chart-line"></i>
+              <i className="ri-store-2-line"></i>
             </li>
           </ul>
           <article>
@@ -39,7 +42,7 @@ const Services = () => {
         <div className="service-item">
           <ul>
             <li>
-              <i className="fa-brands fa-telegram"></i>
+              <i className="ri-mail-send-fill"></i>
             </li>
           </ul>
           <article>
@@ -54,7 +57,7 @@ const Services = () => {
         <div className="service-item">
           <ul>
             <li>
-              <i className="fa-solid fa-building-columns"></i>
+              <i className="ri-calendar-check-line"></i>
             </li>
           </ul>
           <article>
@@ -69,7 +72,7 @@ const Services = () => {
         <div className="service-item">
           <ul>
             <li>
-              <i className="fa-sharp fa-solid fa-credit-card"></i>
+              <i className="ri-global-line"></i>
             </li>
           </ul>
           <article>
@@ -84,7 +87,7 @@ const Services = () => {
         <div className="service-item">
           <ul>
             <li>
-              <i className="fa-solid fa-bag-shopping"></i>
+              <i className="ri-compasses-2-fill"></i>
             </li>
           </ul>
           <article>

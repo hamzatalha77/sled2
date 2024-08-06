@@ -3,10 +3,13 @@ const Products = () => {
   return (
     <section className="design" id="design">
       <div className="containerdesign">
-        <div className="design-title">
+        <div className="big-headers">
+          <span className="big-header">Latest Products</span>
+        </div>
+        {/* <div className="design-title">
           <h2>Recent Arts & Designs</h2>
           <p>recent arts & designs on the blog</p>
-        </div>
+        </div> */}
 
         <div className="design-content">
           <div className="design-item">

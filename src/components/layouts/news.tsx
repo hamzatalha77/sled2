@@ -4,10 +4,13 @@ import News1 from '../../assets/images/news1.jpg'
 const News = () => {
   return (
     <section id="blog">
-      <div className="blog-heading">
+      <div className="big-headers">
+        <span className="big-header">Our News</span>
+      </div>
+      {/* <div className="blog-heading">
         <span>Our Recent Posts</span>
         <h3>My Blog</h3>
-      </div>
+      </div> */}
       <div className="blog-container">
         <div className="blog-box">
           <div className="blog-img">
