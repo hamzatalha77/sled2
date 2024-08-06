@@ -12,24 +12,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      const btn = document.getElementsByClassName('dot')
-      const slider = document.getElementById('slider')
-
-      btn[0].onclick = function () {
-        slider.style.transform = 'translateX(0px)'
-        for (i = 0; i < 2; i++) {
-          btn[i].classList.remove('active')
-        }
-        this.classList.add('active')
-      }
-      btn[1].onclick = function () {
-        slider.style.transform = 'translateX(-1050px)'
-        for (i = 0; i < 2; i++) {
-          btn[i].classList.remove('active')
-        }
-        this.classList.add('active')
-      }
-    </script>
   </body>
 </html>

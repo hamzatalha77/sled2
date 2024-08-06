@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
@@ -11,11 +11,11 @@ import icon1 from '../../assets/icons/icons8-facebook.svg'
 import icon2 from '../../assets/icons/icons8-instagram.svg'
 import icon3 from '../../assets/icons/icons8-twitterx.svg'
 
-const Hero = () => {
+const Hero: React.FC = () => {
   useEffect(() => {
     Swiper.use([Navigation, Pagination])
 
-    new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper', {
       speed: 1800,
       loop: true,
       pagination: {
@@ -58,6 +58,10 @@ const Hero = () => {
         }
       }
     })
+
+    return () => {
+      swiper.destroy()
+    }
   }, [])
 
   return (
@@ -116,24 +120,25 @@ const Hero = () => {
           <span></span>
         </a>
       </div>
+
       <div className="social-icons-wrap">
         <ul>
           <li>
             <a href="">
-              <img src={icon1} alt="" />
+              <img src={icon1} alt="facebook" />
               <span>facebook</span>
             </a>
           </li>
           <li>
             <a href="">
-              <img src={icon2} alt="" />
+              <img src={icon2} alt="instagram" />
               <span>Instagram</span>
             </a>
           </li>
           <li>
             <a href="">
               <span>Twitter</span>
-              <img src={icon3} alt="" />
+              <img src={icon3} alt="twitter" />
             </a>
           </li>
         </ul>
