@@ -1,10 +1,10 @@
-import Hero from '../layouts/hero'
-import Aboutus from '../layouts/aboutus'
-import Products from '../layouts/products'
-import Collab from '../layouts/collab'
-import News from '../layouts/news'
-import Services from '../layouts/services'
-import Moving from '../layouts/moving'
+import Hero from '../sections/hero'
+import Aboutus from '../sections/aboutus'
+import Products from '../sections/products'
+import Collab from '../sections/collab'
+import News from '../sections/news'
+import Services from '../sections/services'
+import Moving from '../sections/moving'
 
 const Main = () => {
   return (

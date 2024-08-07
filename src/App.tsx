@@ -1,5 +1,5 @@
-import Header from './components/layouts/header'
-import Footer from './components/layouts/footer'
+import Header from './components/sections/header'
+import Footer from './components/sections/footer'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Main from './components/pages/main'
 import About from './components/pages/about'

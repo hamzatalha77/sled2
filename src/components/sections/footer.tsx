@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <section className=" bottom-0 relative">
+    <section>
       <footer>
         <div className="footercontainer">
           <div className="sec aboutus">
@@ -67,8 +67,8 @@ const Footer = () => {
                   <i className="ri-map-pin-line"></i>
                 </span>
                 <span>
-                  Lorem ipsum dolor sit amet. <br />
-                  Lorem ipsum dolor sit amet. <br />
+                  Hay El Fath 3 Rue 14 . <br />
+                  Casablanca Ain Chock. <br />
                   MAROC
                 </span>
               </li>
@@ -86,7 +86,7 @@ const Footer = () => {
                   <i className="ri-mail-line"></i>
                 </span>
                 <p>
-                  <a href="mailto:knowmore@gmail.com">knowmore@gmail.com</a>
+                  <a href="mailto:StrongLED@gmail.com">StrongLED@gmail.com</a>
                 </p>
               </li>
             </ul>
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="copyrightText">
-        <p>Copyright © 2024 Online Tutorials. All Rights Reserved</p>
+        <p>Copyright © 2024 StrongLED. All Rights Reserved</p>
       </div>
     </section>
   )

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +12,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 nav {
@@ -303,7 +303,7 @@ nav ul li a:hover {
   padding-bottom: 20px;
 }
 .row .contentWrapper p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 25px;
   padding-bottom: 25px;
 }
@@ -379,9 +379,9 @@ nav ul li a:hover {
 }
 
 .blog-text .blog-title {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #272727;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
 }
 
 .blog-text .blog-title:hover {
@@ -399,7 +399,7 @@ nav ul li a:hover {
   margin: 20px 0px;
 }
 .blog-text a {
-  color: #0f0f0f;
+  color: #000000;
 }
 
 .blog-text a:hover {
@@ -415,13 +415,11 @@ nav ul li a:hover {
   font-size: 2rem;
   margin: 1rem auto;
   text-align: center;
-  font-family: system-ui;
 }
 
 #services p {
   text-align: center;
   margin-bottom: 1rem;
-  font-family: sans-serif;
 }
 
 .services-container {
@@ -468,14 +466,15 @@ nav ul li a:hover {
 
 .service-heading {
   margin: 1rem 0;
+  font-size: 20px;
+  line-height: 25px;
   text-align: center;
-  color: #000000b7;
-  font-family: system-ui;
+  color: #000000;
 }
 
 article p {
   font-size: 14px;
-  color: #000000b7;
+  color: #000000;
 }
 
 .service-item:hover p,
@@ -555,16 +554,16 @@ article p {
   margin: 0 auto;
 }
 .design-title a {
-  color: var(--dark);
+  font-size: 20px;
+  line-height: 25px;
   text-decoration: none;
-  text-transform: capitalize;
-  font-family: var(--Playfair);
 }
 
 .hero {
   --swiper-theme-color: #fff;
 }
 .slider-content {
+  background: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -642,10 +641,10 @@ article p {
   }
 }
 
-.hero-title + .hero-title {
+/* .hero-title + .hero-title {
   left: 20%;
   margin-top: 20px;
-}
+} */
 
 .video-btn {
   position: absolute;
@@ -863,12 +862,7 @@ article p {
   .hero-title span {
     font-size: 25px;
   }
-  .swiper-progressbar-wrap {
-    bottom: 30px;
-    left: 0px;
 
-    width: 50%;
-  }
   .blog-box {
     margin: 20px 10px;
     width: 100%;
@@ -930,8 +924,23 @@ article p {
   .swiper-progressbar-wrap {
     bottom: 30px;
     left: 0px;
-    max-width: 300px;
+    max-width: 170px;
     width: 100%;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 20px;
+  }
+  .swiper-progressbar-wrap > *:not(.swiper-progressbar) {
+    height: 35px;
+    min-width: 35px;
+  }
+  [class*='swiper-button'] {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-prev {
+    right: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -948,8 +957,8 @@ article p {
 }
 
 footer {
-  bottom: 0%;
   position: relative;
+  bottom: 0;
   width: 100%;
   height: auto;
   padding: 50px 100px;
@@ -1091,6 +1100,7 @@ footer p {
   }
 }
 .big-headers {
+  text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -1121,7 +1131,7 @@ footer p {
   font-size: 80px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #6a54a6;
+  color: #d40e5c;
   animation: animate_text 30s linear infinite; /* The animation property */
 }
 .text span {
