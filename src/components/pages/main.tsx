@@ -1,10 +1,11 @@
 import Hero from '../sections/hero'
 import Aboutus from '../sections/aboutus'
 import Products from '../sections/products'
-import Collab from '../sections/collab'
+// import Collab from '../sections/collab'
 import News from '../sections/news'
-import Services from '../sections/services'
+// import Services from '../sections/services'
 import Moving from '../sections/moving'
+import Clients from '../sections/clients'
 
 const Main = () => {
   return (
@@ -13,9 +14,10 @@ const Main = () => {
       <Aboutus />
       <Moving />
       <Products />
-      <Collab />
+      <Clients />
+      {/* <Collab /> */}
       <News />
-      <Services />
+      {/* <Services /> */}
     </div>
   )
 }

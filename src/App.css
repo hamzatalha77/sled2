@@ -308,15 +308,41 @@ nav ul li a:hover {
   padding-bottom: 25px;
 }
 .row .contentWrapper a {
-  display: inline-block;
-  text-decoration: none;
+  background: none;
+  border: 2px solid #179de5;
+  color: #179de5;
+  font-family: 'montserrat', sans-serif;
   text-transform: uppercase;
+  padding: 12px 20px;
+  min-width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.row .contentWrapper a:hover {
+  color: #fff;
+}
+.row .contentWrapper a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background: #179de5;
-  color: white;
-  padding: 15px 40px;
-  letter-spacing: 1px;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.row .contentWrapper a::before {
+  transform: scaleX(0);
 }
 
+.row .contentWrapper a:hover::before {
+  transform: scaleX(1);
+}
 #blog {
   display: flex;
   justify-content: center;
@@ -881,7 +907,7 @@ article p {
     line-height: 22px;
   }
   .row .contentWrapper a {
-    font-size: 15px;
+    font-size: 13px;
     padding: 10px 40px;
   }
 }
@@ -922,7 +948,7 @@ article p {
     line-height: 24px;
   }
   .swiper-progressbar-wrap {
-    bottom: 0;
+    bottom: 3px;
     left: 0px;
     max-width: 170px;
     width: 100%;
@@ -1151,4 +1177,74 @@ footer p {
   to {
     transform: translate3d(-100%, 0, 0);
   }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.image-client {
+  width: 100%;
+}
+.image-client:hover {
+  transform: translateZ(20px);
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
