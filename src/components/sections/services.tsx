@@ -1,7 +1,7 @@
 import 'remixicon/fonts/remixicon.css'
 const Services = () => {
   return (
-    <section className="h-screen relative pb-11" id="services">
+    <section className="h-screen relative grid" id="services">
       <div className="big-headers">
         <span className="big-header">Our Services</span>
       </div>

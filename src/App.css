@@ -550,7 +550,7 @@ article p {
   padding: 1rem;
   font-size: 1.2rem;
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 .design-title a {
@@ -922,7 +922,7 @@ article p {
     line-height: 24px;
   }
   .swiper-progressbar-wrap {
-    bottom: 30px;
+    bottom: 0;
     left: 0px;
     max-width: 170px;
     width: 100%;
@@ -942,6 +942,9 @@ article p {
   .swiper-button-prev {
     right: 50px;
   }
+  .video-btn {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .design-content {
@@ -953,7 +956,10 @@ article p {
     margin: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 450px) {
+  .social-icons-wrap {
+    display: none;
+  }
 }
 
 footer {
@@ -1100,6 +1106,7 @@ footer p {
   }
 }
 .big-headers {
+  margin: 20px 0 20px 0;
   text-align: center;
   align-items: center;
   display: flex;
