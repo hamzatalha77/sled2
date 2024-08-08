@@ -7,7 +7,7 @@ const Moving = () => {
           <span>We will Show you The path</span>
           <span>Follow Our Steps</span>
           <span>we are here to help you</span>
-          <span>are still here</span>
+          <span>are you still here</span>
         </div>
         <div className="text">
           <span>feel free</span>

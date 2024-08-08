@@ -13,7 +13,7 @@ const Steps = () => {
             <h1 className="title-font sm:text-2xl text-xl  mb-3 text-center">
               Project Planning
             </h1>
-            <p className="mb-3 text-center">
+            <p className="mb-3 text-center text-lg">
               Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
               microdosing tousled waistcoat.
             </p>
@@ -27,7 +27,7 @@ const Steps = () => {
             <h1 className="title-font sm:text-2xl text-xl  mb-3 text-center">
               Gaining Materials
             </h1>
-            <p className="mb-3 text-center">
+            <p className="mb-3 text-center text-lg">
               Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
               microdosing tousled waistcoat.
             </p>
@@ -41,7 +41,7 @@ const Steps = () => {
             <h1 className="title-font sm:text-2xl text-xl  mb-3 text-center">
               Project Execution
             </h1>
-            <p className="mb-3 text-center">
+            <p className="mb-3 text-center text-lg">
               Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
               microdosing tousled waistcoat.
             </p>
